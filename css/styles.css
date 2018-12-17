@@ -1,229 +1,179 @@
-* {
-  font-family: 'Fira Sans', sans-serif;
+body{
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #F0ECEE;
+    margin: 20px;
 }
 
-
-.header {
-  font-weight: 400;
-  white-space: nowrap;
-  display: block;
-  font-size: 15pt;
-  float: left;
-  margin-left: 40px;
+header{
+    margin: 0 0;
 }
 
-
-body {
-   background-image: url("bulldog.jpg");
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-size: cover;
-   background-color: #f0ecee;
+p{
+    color: #88898B;
+    font-size: 1.3em;
 }
 
-.content {
-  resize: horizontal
-  overflow: auto;
-  margin-top: 200px;
+a{
+    text-decoration: none;
+    font-weight: 300;
+    color: #88898B;
+    font-size: 1.15em;
+    width: 100%;
 }
 
-
-.menu ul {
-  list-style-type: none;
-  margin: 0;
-  overflow: hidden;
-  background-color: none;
-  width: auto;
-  float: right;
+ul{
+    list-style: none;
+    margin: 0 0;
+    padding: 0 0;
 }
 
-.menu ul li {
-  list-style: none;
-  float: left;
+.menu{
+    display: flex;
+    flex-direction: column;
 }
 
-.menu ul li a {
-  padding: 10px;
-  text-align: center;
-  display: block;
-  color: #88898b;
-  text-decoration: none;
-  font-weight: 300;
+h1{
+    color: black;
+    font-weight: 600;
+    font-size: 2.5em;
+    margin: 0;
 }
 
-.menu ul li a#contact{
-  display: block;
-  color: white;
-  background: #ff4850;
-  border-radius: 5px;
-  font-weight: 300;
+strong{
+    color: #FF4850;
 }
 
-.menu ul li a#contact:hover {
-  color: #88898b;
+span{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+button{
+    display: flex;
+    border: none;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.15em;
+    background-color: #FF4850;
+    border-radius: 5px;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+a.find{
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+button:hover{
+    background-color: #CCC;
+}
+
+.home{
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 200%;
+    justify-self: flex-start;
+    margin: 0px auto 20px 0px;
+    padding: 0 0 20 0;
+
+}
+
+a.home{
+    color: black;
+    margin-left: 0px;
+}
+
+.content{
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+#button-text{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px){
+body{
+    background-image: url(bulldog.jpg);
+    margin: 30px 60px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.menu{
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    margin: 0 0;
+    padding: 0 0;
+    padding-inline-start: 0px;
+    width: max-content;
+
+}
+
+li{
+    display: flex;
+    margin: 0px 15px;
+    padding: 0 0;
 }
 
 .menu ul li a:hover {
-  display: block;
   background-color: #ccc;
-  border-radius: 15px;
-  color: #ff4850;
-}
-
-h1 {
-  margin-left: 40px;
-  font-weight: 600;
-  width: 500px;
-  font-size: 22pt;
-}
-
-
-p {
-  margin-left: 40px;
-  color: #88898b;
-  font-weight: 300;
-  width: 450px;
-  font-size: 13pt;
-}
-
-
-.adopting {
-  color: #ff4850;
-}
-
-.content a#find {
-  display: inline-block;
-  color: white;
-  background-color: #ff4850;
-  font-weight: 300;
   border-radius: 5px;
-  padding: 10px 40px 10px 40px;
-  text-align: center;
-  margin-left: 40px;
-}
-
-.content a#find:hover {
-  background-color: #ccc;
-}
-
-.Me {
   color: #ff4850;
-  display: inline;
+  padding: 10px;
 }
 
-.adopting {
-  color: #ff4850;
+button{
+    width: auto;
 }
 
-/*check slack for max width size*/
-
-@media screen and (min-width:320px) and (max-width:480px){
-  *
-  {
-    width: 100%;
-    display:flex;
-    flex-wrap: wrap;
-  }
-
-title {
-  display: none;
+button.contact{
+    padding: 10px;
+    box-sizing: border-box;
+    margin-left: auto;
+    flex: 1 0 120px;
 }
 
-.Me {
-  display:inline;
+a.find{
+    padding: 0px 37px;
+    box-sizing: border-box;
+    flex-basis: 200px;
 }
 
-
-
-.adopting {
-  display: inline;
-  width: auto;
+p{
+    margin: 35px 0px;
 }
 
-
-.header {
-  font-size: 20pt;
-  vertical-align: text-top;
-  margin: 10px;
+.navbar{
+    margin-left: auto;
+    margin-right: auto;
 }
-
-
-.header a#contact {
-  border-radius: 0px;
-}
-
-#contact
-{
-  text-align: center;
-  padding: 10px 40px 10px 40px;
-  margin: 0px 0px 0px 0px
-  width: 100%;
-}
-
-
-.menu ul {
-  margin: 0px 0px 0px 0px ;
-  padding: 0px 0px 0px 0px;
-}
-
-
-.menu ul li a
-{
-	padding-top: 2px;
-  padding-bottom:2px;
-  text-align: left;
-	display: block;
-	text-decoration: none;
-  font-weight: 300;
-  font-size: 14pt;
-  display: flex;
-  justify-content: flex-start;
-}
-
-
-
-  body {
-    background-color: #F0ECEE;
-    background-image: none;
-    justify-content: initial;
-  }
-
-
-
-h1 {
-  font-size: 25pt;
-  margin-left: 10px;
-  display: inline;
-  width: 300px;
-  margin-bottom: 0px;
-}
-
-
-
- p {
-   margin: 0px 10px 10px 10px ;
-   font-size: 11pt;
-   padding: 0px 0px 5px 0px;
- }
-
 
 .content{
-  margin-top: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 55%;
+    display: block;
 }
 
-.content a#find {
-  padding: 10px 40px 10px 40px;
-  text-align: center;
-  margin: 0px 0px 0px 0px;
-  border-radius: 5px;
-  width: 100%;
-}
-
-
-
-#find {
-  font-size: 14pt;
-  background-color: #ff4850;
-  border-radius: 5px;
-  width: 100%;
 }
